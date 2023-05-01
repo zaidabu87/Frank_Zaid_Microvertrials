@@ -8,6 +8,10 @@ body {
         display: block;
 }
 
+.container {
+    margin: 50px 100px 0px;
+}
+
 .header {
     padding: 0 0.625rem;
     margin-bottom: 1.875rem;
@@ -51,16 +55,20 @@ p {
     font-size: 1.125rem;
 }
 
-@media (min-width: 480px)
-form {
+@media (min-width: 480px) form {
     padding: 2.5rem;
 }
+
 form {
     background: rgb(40, 40, 45);
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
     display: block;
-    margin-top: 0em;
+    margin: 60px 120px;
+}
+
+form, #survey-form {
+    padding: 40px;
 }
 
 form, p {
@@ -122,7 +130,6 @@ input {
     display: inline-block;
     text-align: start;
     appearance: auto;
-    -webkit-rtl-ordering: logical;
     cursor: text;
     background-color: field;
     margin: 0em;
@@ -131,4 +138,25 @@ input {
     border-style: inset;
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: green;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
 }
